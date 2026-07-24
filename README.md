@@ -84,6 +84,20 @@ HidHideが無効のままだと、ゲームへ物理コントローラーとUSC�
 
 ゲーム側で使用するコントローラーには、USCが作成した仮想コントローラーの「Wireless Controller」を選択してください。
 
+## キャリブレーション時の注意
+
+コントローラーのボタンをレイヤーの起爆キーに設定している場合、そのボタンは通常のボタン入力ではなく、レイヤー切り替え用の起爆キーとして処理されます。
+
+たとえば、レイヤーの起爆キーをL1に設定している場合、ゲーム側のキャリブレーションで元のL1を登録するには、レイヤーのL1起爆キー設定を一時的に解除してください。
+
+NORMALレイヤーでコントローラーの単一ボタンを別の入力へ変換している場合も、元のボタンはそのまま出力されません。
+
+たとえば、NORMALレイヤーでR2を「R2＋○」へ変換している場合、キャリブレーションには通常のR2単体ではなく、設定された複合入力が送られます。
+
+キャリブレーションを行う際は、該当するレイヤーの起爆キー設定を一時的に解除するか、該当するNORMALレイヤーのタブを一時的にOFFにしてください。
+
+キャリブレーション完了後は、元の設定へ戻して使用できます。
+
 
 # Important notice when using a virtual controller
 
@@ -98,3 +112,18 @@ After applying the settings, check USC’s pressed-button display.
 Press a controller button once and confirm that only one corresponding button input appears. If the same input appears twice from a single press, the physical controller may not be hidden correctly.
 
 In the game’s controller settings, select **Wireless Controller**, which is the virtual controller created by USC.
+
+
+## Controller calibration note
+
+When a controller button is assigned as a layer Trigger key, USC processes that button as the Trigger key used for layer switching instead of sending it as a normal controller button.
+
+For example, if the layer Trigger key is assigned to L1, temporarily clear the layer’s L1 Trigger key assignment before registering the original L1 button in a game’s controller calibration screen.
+
+The original button is also not sent by itself when a controller button is remapped to another input in the NORMAL layer.
+
+For example, if R2 is remapped to **R2 + Circle** in the NORMAL layer, the configured combination is sent instead of the original R2 button by itself.
+
+Before controller calibration, temporarily clear the relevant layer Trigger key assignment or temporarily disable the relevant tab in the NORMAL layer.
+
+After calibration is complete, the original USC settings can be restored.
