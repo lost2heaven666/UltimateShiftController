@@ -127,3 +127,50 @@ For example, if R2 is remapped to **R2 + Circle** in the NORMAL layer, the confi
 Before controller calibration, temporarily clear the relevant layer Trigger key assignment or temporarily disable the relevant tab in the NORMAL layer.
 
 After calibration is complete, the original USC settings can be restored.
+
+
+# 現在確認されている仮想コントローラーの問題
+
+現在、USCを長時間タスクトレイへ格納したまま使用すると、仮想コントローラーの一部の入力が反応しなくなる場合があります。
+
+
+この現象が発生した場合は、USCをタスクトレイから一度表示してください。
+
+タスクトレイから表示すると、反応しなくなった入力が復旧します。
+
+
+ゲームを仮想フルスクリーンで使用している場合など、タスクトレイを直接操作しにくい環境では、USCを表示するためのショートカットをあらかじめ登録してください。
+
+問題が発生した場合は、そのショートカットを使用してUSCをタスクトレイから表示してください。
+
+
+タスクトレイから表示しても復旧しない場合は、タスクマネージャーからUSCを強制終了し、再起動してください。
+
+
+この問題は現在未修正です。
+
+開発資金に余裕ができ次第、原因を調査し、可能であれば修正を行います。
+
+
+
+# Known virtual controller issue
+
+When USC remains minimized to the system tray for an extended period, some virtual controller inputs may stop responding.
+
+
+If this occurs, restore USC from the system tray.
+
+Restoring USC from the system tray should make the affected inputs work again.
+
+
+When using a game in borderless fullscreen mode, or in another environment where accessing the system tray is difficult, register a shortcut for showing USC in advance.
+
+If the issue occurs, use that shortcut to restore USC from the system tray.
+
+
+If restoring USC does not resolve the issue, force-close USC through Task Manager and restart it.
+
+
+This issue is currently unresolved.
+
+When sufficient development funding becomes available, the cause will be investigated and a fix will be attempted if possible.
