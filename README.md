@@ -70,9 +70,31 @@ This is a personal tool made to regain full control over key input.
 もちろん、使ってもらえるだけでも嬉しいです。
 全然広まらないので・・・便利だったら広めて見てください。
 
-現在
-リリース版に向けてまだ未完成なラベル設定と細かいバグの調整をしています。
-全て出来上がればHUDを使ったゲーム以外でも
-工夫次第では色々な使い方ができるようになると思います。
+# 仮想コントローラーを使用する場合の重要な注意
 
-もう終わったほぼあとは自分でやっててバグか見つかるかで更新
+仮想コントローラーを使用する場合は、USCのHidHide設定でゲームから隠す物理コントローラーを選択し、HidHideを有効にしてください。
+
+物理コントローラーを選択しただけでは非表示になりません。必ずHidHideを有効にする必要があります。
+
+HidHideが無効のままだと、ゲームへ物理コントローラーとUSCの仮想コントローラーの両方から入力が送られ、ボタンが二重に反応する場合があります。
+
+設定後は、USCの押下ボタン表示を確認してください。
+
+コントローラーのボタンを1回押したときに、対応するボタン入力が1つだけ表示されることを確認してください。1回の押下で同じ入力が2つ表示される場合は、物理コントローラーが正しく隠されていない可能性があります。
+
+ゲーム側で使用するコントローラーには、USCが作成した仮想コントローラーの「Wireless Controller」を選択してください。
+
+
+# Important notice when using a virtual controller
+
+When using a virtual controller, select the physical controller that should be hidden from games in USC’s HidHide settings, and then enable HidHide.
+
+Selecting the physical controller alone does not hide it. HidHide must also be enabled.
+
+If HidHide remains disabled, the game may receive input from both the physical controller and USC’s virtual controller, causing buttons to respond twice.
+
+After applying the settings, check USC’s pressed-button display.
+
+Press a controller button once and confirm that only one corresponding button input appears. If the same input appears twice from a single press, the physical controller may not be hidden correctly.
+
+In the game’s controller settings, select **Wireless Controller**, which is the virtual controller created by USC.
